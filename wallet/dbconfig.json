@@ -1,0 +1,18 @@
+{
+	"log": {
+		"logger": "DBServer",
+		"level": "debug",
+		"filePath": "./log/walletdb.log",
+		"outputType": "console|file",
+		"rotate": {
+			"type": "period|bytes",
+			"period": "daily",
+			"interval": 1,
+			"backupCount": 50,
+			"maxBytes": 10485760
+		}
+	},
+	"putPort": 5000,
+	"getPort": 5001,
+	"storagePath": "./.storage"
+}
